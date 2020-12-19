@@ -1,0 +1,149 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+.links{
+  text-decoration: none;
+  color: inherit;
+}
+
+input{
+  border: 2px solid #888;
+  padding: 2px;
+  text-align: center;
+}
+
+label{
+  cursor: pointer;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.all-cards{
+  padding: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.add-new-card-button{
+  margin: 0 10px;
+  width: 280px;
+  height: 150px;
+  border: 2px dotted black;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.single-card{
+  margin: 0 10px;
+  width: 280px;
+  height: 150px;
+  border-radius: 5px;
+  background-image: linear-gradient(to right, royalblue , #ddd);
+  position: relative;
+}
+.single-card>p{
+  margin: 0;
+  font-size: 1.2rem;
+}
+.barcode-img{
+  width: 40px;
+  position: absolute;
+  top: 20%;
+  left: 10px;
+}
+.cardtype-img{
+  width: 88px;
+  position: absolute;
+  top: 10%;
+  right: 10px;
+}
+.single-card-name{
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+.single-card-number{
+  position: absolute;
+  top: 50%;
+  left: 10px;
+}
+.single-card-expires{
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+}
+.single-card-button>p{
+  margin: 5px 0;
+}
+
+.display-single-card-wrap{
+  margin: 0 auto;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.inputs-wrap{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.inputs-wrap>p{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.inputs-wrap>p>input{
+  width: 218px;
+}
+.number-inputs{
+  display: flex;
+  flex-direction: column;
+}
+.number-inputs>p{
+  margin: 5px 0;
+}
+.number-inputs>p>input{
+  width: 50px;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
